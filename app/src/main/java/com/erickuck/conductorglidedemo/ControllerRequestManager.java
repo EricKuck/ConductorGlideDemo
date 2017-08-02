@@ -22,7 +22,7 @@ public class ControllerRequestManager {
                 }
 
                 @Override
-                public void preDestroyView(@NonNull Controller controller, @NonNull View view) {
+                public void postDestroyView(@NonNull Controller controller) {
                     requestManager.onStop();
                 }
 
